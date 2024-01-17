@@ -11,7 +11,6 @@ const LoginForm = () => {
 
   React.useEffect(() => {
     const token = window.localStorage.getItem('token');
-
     if (token) {
       getUser(token);
     }
